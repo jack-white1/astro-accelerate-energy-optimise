@@ -80,12 +80,12 @@ def energy_test(low_freq, high_freq, bfloat):
 
     if (bfloat == True):
         print("FDAS core frequency range: " +str(low_freq)+ "MHz to " +str(high_freq)+ "Mhz, bfloat16")
-        aa_str = ["/astro-accelerate-power-bfloat/astro-accelerate/astro-accelerate",
-                "ska_input.txt", "23.23", "snr0.001", str(low_freq), str(high_freq)]
+        aa_str = ["/home/sedm5426/astro-accelerate-energy-optimise/astro-accelerate-power-bfloat/astro-accelerate/astro-accelerate",
+                "/home/sedm5426/astro-accelerate-energy-optimise/ska_input.txt", "23.23", "snr0.001", str(low_freq), str(high_freq)]
     else:
         print("FDAS core frequency range: " +str(low_freq)+ "MHz to " +str(high_freq)+ "Mhz, single-precision")
-        aa_str = ["/astro-accelerate-power-single/astro-accelerate/astro-accelerate",
-            "ska_input.txt", "23.23", "snr0.001", str(low_freq), str(high_freq)]
+        aa_str = ["/home/sedm5426/astro-accelerate-energy-optimise/astro-accelerate-power-single/astro-accelerate/astro-accelerate",
+            "/home/sedm5426/astro-accelerate-energy-optimise/ska_input.txt", "23.23", "snr0.001", str(low_freq), str(high_freq)]
 
 
 
